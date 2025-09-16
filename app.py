@@ -5,8 +5,8 @@ import os
 st.title("📩 SMS Spam Classifier")
 
 # Debug: check current directory and files
-st.write("Current directory:", os.getcwd())
-st.write("Files in directory:", os.listdir())
+# st.write("Current directory:", os.getcwd())
+# st.write("Files in directory:", os.listdir())
 
 # Load model and vectorizer safely
 try:
@@ -64,5 +64,6 @@ if st.button("Predict"):
 #             st.error("🚨 Spam Message")
 #         else:
 #             st.success("✅ Not Spam")
+
 
 
