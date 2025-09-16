@@ -3,7 +3,7 @@ import pickle
 
 # Load model and vectorizer
 model = pickle.load(open("model.pkl", "rb"))
-tfidf = pickle.load(open("vectorizer.pkl1", "rb"))
+tfidf = pickle.load(open("vectorizer.pkl", "rb"))
 
 # Streamlit UI
 st.title("📩 SMS Spam Classifier")
@@ -22,3 +22,4 @@ if st.button("Predict"):
             st.error("🚨 Spam Message")
         else:
             st.success("✅ Not Spam")
+
